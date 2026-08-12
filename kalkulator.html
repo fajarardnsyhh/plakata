@@ -29,15 +29,46 @@
 
 <script>
 
-var alas = 100;
+
+
+const inputtinggi = document.getElementById("tinggi");
+const inputalas = document.getElementById("alas");
+
+// 2. Listen for the 'change' event
+inputtinggi.addEventListener("change", function(event) { 
+
+
+var alas = document.getElementById('alas').value;
 
 console.log("alas = " + alas);
-var tinggi = 200;
+var tinggi = document.getElementById('tinggi').value;
 
 console.log("tinggi = " + tinggi);
 var luas = alas * tinggi / 2;
 
+document.getElementById("hasil").innerHTML = "<b>"+luas+"</b>";
+
 console.log("luas = " + luas);
+
+});
+
+inputalas.addEventListener("change", function(event) { 
+
+
+var alas = document.getElementById('alas').value;
+
+console.log("alas = " + alas);
+var tinggi = document.getElementById('tinggi').value;
+
+console.log("tinggi = " + tinggi);
+var luas = alas * tinggi / 2;
+
+document.getElementById("hasil").innerHTML = "<b>"+luas+"</b>";
+
+console.log("luas = " + luas);
+
+});
+
 
 </script>
 
